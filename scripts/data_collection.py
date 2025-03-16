@@ -3,7 +3,8 @@ import yfinance as yf
 import pandas as pd
 
 # Define the folder where CSV files will be saved
-save_folder = "data\raw"
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+save_folder = os.path.join(BASE_DIR,"data","raw")
 
 # Create the folder if it doesn't exist
 os.makedirs(save_folder, exist_ok=True)
