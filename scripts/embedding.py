@@ -66,8 +66,9 @@ def load_index(index_path):
 
 if __name__ == "__main__":
     # Example usage
-    json_path = "data\processed\financial_data.json"
-    index_path = "embeddings\financial_data.index"
+    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    json_path = os.path.join(BASE_DIR,"data","processed","financial_data.json")
+    index_path = os.path.join(BASE_DIR,"embeddings","financial_data.index")
     
     with open(json_path, "r", encoding="utf-8") as f:
         financial_records = json.load(f)
