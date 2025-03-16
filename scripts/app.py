@@ -5,6 +5,7 @@ import json
 import faiss
 from sentence_transformers import SentenceTransformer
 import numpy as np
+import os
 
 # Our modules:
 from embedding import chunk_data, load_index
