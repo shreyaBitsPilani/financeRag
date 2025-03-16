@@ -1,1 +1,10 @@
- 
+pandas
+numpy
+torch
+transformers
+sentencepiece
+sentence-transformers
+faiss-cpu
+rank-bm25
+streamlit
+nltk
