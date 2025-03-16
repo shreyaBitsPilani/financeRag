@@ -93,8 +93,8 @@ if __name__ == "__main__":
     # so store them in a separate file or handle them similarly
     # For demonstration, re-construct them quickly below:
     
-    json_path = r"D:\RAG_Financial_QA\data\processed\financial_data.json"
-    index_path = r"D:\RAG_Financial_QA\embeddings\financial_data.index"
+    json_path = "data\processed\financial_data.json"
+    index_path = "embeddings\financial_data.index"
     model_name = "sentence-transformers/all-MiniLM-L6-v2"
     
     # Load data
