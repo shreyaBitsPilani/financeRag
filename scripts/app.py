@@ -33,11 +33,11 @@ def main():
 
     # Paths (adjust to your environment)
         # Define base directory
-    base_dir = Path(__file__).resolve().parent
+    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     
     # Paths (platform-independent)
-    json_path = base_dir / "data" / "processed" / "financial_data.json"
-    index_path = base_dir / "embeddings" / "financial_data.index"
+    json_path = os.path.join(BASE_DIR,"data", "processed" ,"financial_data.json")
+    index_path = os.path.join(BASE_DIR,"embeddings" , "financial_data.index")
     
      # Load data
     financial_data = load_financial_data(json_path)
