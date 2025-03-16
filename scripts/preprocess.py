@@ -61,8 +61,9 @@ def save_to_json(records, out_path):
         json.dump(records, f, indent=2)
 
 if __name__ == "__main__":
-    raw_data_dir = "data\raw"  # adapt to your path
-    out_json = "data\processed\financial_data.json"
+    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    raw_data_dir = os.path.join(BASE_DIR, "data","raw")  # adapt to your path
+    out_json = os.path.join(BASE_DIR, "data","processed","financial_data.json")
     
     records = load_and_clean_data(raw_data_dir)
     save_to_json(records, out_json)
