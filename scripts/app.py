@@ -31,8 +31,8 @@ def main():
     st.title("Financial QA Demo-Apple")
 
     # Paths (adjust to your environment)
-    json_path = r"D:\RAG_Financial_QA\data\processed\financial_data.json"
-    index_path = r"D:\RAG_Financial_QA\embeddings\financial_data.index"
+    json_path = "data\processed\financial_data.json"
+    index_path = "embeddings\financial_data.index"
     
      # Load data
     financial_data = load_financial_data(json_path)
